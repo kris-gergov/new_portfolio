@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.waves {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
+.waves canvas {
+  bottom: -34px;
+  position: fixed;
+}
+
+/* This is a single-line comment */
+
+.elements-sub-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1vh auto auto auto;
+}
+
+.elements-sub-nav .item {
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 20px;
+  align-items: center;
+  /* background-color: rgba(5, 5, 5, 0.5); */
+  /* border: 1px solid rgba(135, 135, 135, 0.2); */
+  box-sizing: border-box;
+  color: white;
+  font-size: 0.65rem;
+  justify-content: center;
+  letter-spacing: 0.295rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-duration: 0.5s;
+}
+
+.elements-sub-nav .item:hover {
+  background-color: transparent;
+}
+
+.elements-sub-nav .item img {
+  border: none;
+  filter: blur(5px) brightness(0.735);
+  opacity: 1;
+  transition: all 0.65s ease-in-out;
+  z-index: -1;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.elements-sub-nav .item:hover img,
+.elements-sub-nav .item:focus img {
+  filter: blur(0);
+  z-index: -1;
+}
+
+.elements-sub-nav .item p {
+  align-items: center;
+  /* background-color: rgba(15, 15, 15, .5); */
+  bottom: -15%;
+  display: flex;
+  font-size: 1.235em;
+  font-weight: 500;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  top: -15%;
+  transition: all 0.435s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.elements-sub-nav .item .buttons {
+  align-items: center;
+  /* background-color: rgba(15, 15, 15, .5); */
+  bottom: -150%;
+  font-size: 1.235em;
+  font-weight: 500;
+  padding: 0;
+  position: absolute;
+  transition: all 0.435s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.elements-sub-nav .item:hover p,
+.elements-sub-nav .item:focus p {
+  background-color: rgba(35, 35, 35, 0.935);
+  color: transparent;
+  bottom: -4.35%;
+  top: 75%;
+}
+
+@media (max-width: 639px) {
+  .elements-sub-nav .item:hover p,
+  .elements-sub-nav .item:focus p {
+    top: 70%;
+  }
+}
+
+.elements-sub-nav .item p .bla {
+  opacity: 1;
+  transition: all 0.435s ease-in-out;
+}
+
+.elements-sub-nav .item:hover p .bla,
+.elements-sub-nav .item:focus p .bla {
+  opacity: 0;
+}
+
+.elements-sub-nav .item:hover .buttons,
+.elements-sub-nav .item:focus .buttons {
+  bottom: 5%;
+}
+
+.elements-sub-nav .item:hover button,
+.elements-sub-nav .item:focus button {
+  opacity: 1;
+  transform: scale(1);
+}
