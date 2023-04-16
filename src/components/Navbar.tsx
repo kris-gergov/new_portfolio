@@ -67,7 +67,7 @@ const Navbar = () => {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between relative z-10 dark:text-light xl:px-24 lg:px-16">
       <button
-        className="flex-col justify-center items-center hidden md:flex"
+        className="flex-col justify-center items-center hidden md:flex sm:mt-[10px]"
         onClick={handleClick}
       >
         <span
@@ -105,27 +105,26 @@ const Navbar = () => {
               title="Projects"
               toggle={handleClick}
             />
-          </nav>
-          <nav className="flex flex-col items-center justify-center flex-wrap gap-4">
-            <motion.a
-              href="https://www.github.com/"
-              target={'_blank'}
-              className="w-10 bg-light rounded-full dark:bg-dark"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <GithubIcon />
-            </motion.a>
-            <motion.a
-              href="https://www.linkedin.com/"
-              target={'_blank'}
-              className="w-10"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <LinkedInIcon />
-            </motion.a>
-            <motion.button
+            <div className="w-full flex items-center justify-around gap-4 my-2">
+              <motion.a
+                href="https://www.github.com/"
+                target={'_blank'}
+                className="w-10 bg-light rounded-full dark:bg-dark"
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <GithubIcon />
+              </motion.a>
+              <motion.a
+                href="https://www.linkedin.com/"
+                target={'_blank'}
+                className="w-10"
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <LinkedInIcon />
+              </motion.a>
+              {/*  <motion.button
               onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
               className="flex items-center justify-center rounded-full p-1"
               whileHover={{
@@ -142,7 +141,8 @@ const Navbar = () => {
               ) : (
                 <MoonIcon className="fill-light w-10" />
               )}
-            </motion.button>
+            </motion.button> */}
+            </div>
           </nav>
         </motion.div>
       ) : null}

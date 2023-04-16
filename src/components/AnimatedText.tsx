@@ -40,7 +40,7 @@ const AnimatedText = ({
     >
       <motion.h1
         className={`${className} inline-block w-full text-dark font-bold capitalize ${size} dark:text-light
-        xl:text-5xl lg:text-center lg:text-6xl md:text-5xl sm:text-3xl`}
+        2xl:text-6xl xl:text-5xl lg:text-center lg:text-6xl md:text-5xl sm:text-3xl`}
         variants={quote}
         initial="initial"
         animate="animate"

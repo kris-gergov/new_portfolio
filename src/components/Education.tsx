@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import ListItemIcon from './ListItemIcon';
+import AnimatedText from './AnimatedText';
 
 const Details = ({ type, time, place, info }) => {
   const ref = useRef(null);
@@ -16,7 +17,7 @@ const Details = ({ type, time, place, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: 'spring' }}
       >
-        <h3 className="uppercase font-bold text-2xl sm:text-xl">
+        <h3 className="uppercase font-bold text-2xl sm:text-lg">
           {type}&nbsp;
         </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/80">
@@ -42,11 +43,15 @@ const Education = () => {
 
   return (
     <div className="">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center 2xl:text-6xl lg:text-7xl md:text-6xl sm:text-4xl md:mb-24 sm:mb-16">
-        Education
-      </h2>
+      <AnimatedText
+        text="Education"
+        className="mb-24 lg:mb-16 md:mb-12 sm:mb-8"
+      />
 
-      <div ref={ref} className="w-[75%] mx-auto relative 2xl:w-[85%]">
+      <div
+        ref={ref}
+        className="w-[75%] mx-auto relative 2xl:w-[85%] sm:ml-[10%]"
+      >
         <motion.div
           style={{ scaleY }}
           className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light"

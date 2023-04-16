@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView, Variants } from 'framer-motion';
+import AnimatedText from './AnimatedText';
 
 const InnerProgressBarVariants: Variants = {
   hide: { width: 0 },
@@ -66,19 +67,20 @@ const Skill = ({ name, x, y }) => {
 const Skills = () => {
   return (
     <>
-      <h2 className="font-bold text-8xl mt-32 mb-24 w-full text-center 2xl:text-6xl lg:text-7xl md:text-6xl sm:text-4xl md:my-24 sm:my-16">
+      {/* <h2 className="font-bold text-8xl mt-32 mb-24 w-full text-center 2xl:text-6xl lg:text-7xl md:text-6xl sm:text-4xl md:my-24 sm:my-16">
         Skills
-      </h2>
+      </h2> */}
+      <AnimatedText text="Skills" className="mt-32 mb-24 md:my-24 sm:my-16" />
       <div className="grid w-[85%] mx-auto grid-cols-8 gap-16 items-center justify-center lg:gap-0">
         <div className="col-span-4 flex flex-col items-start justify-start lg:col-span-8">
           <Skill name="HTML/CSS" x={0.98} y={0.02} />
           <Skill name="TypeScript" x={0.9} y={0.1} />
-          <Skill name="NextJS" x={0.82} y={0.18} />
+          <Skill name="ReactJS/NextJS" x={0.95} y={0.05} />
         </div>
         <div className="col-span-4 flex flex-col items-start justify-start lg:col-span-8">
-          <Skill name="ReactJS" x={0.95} y={0.05} />
           <Skill name="Mongo/PostreSQL" x={0.85} y={0.15} />
-          <Skill name="Node/Express/Sequelize" x={0.88} y={0.12} />
+          <Skill name="Node" x={0.88} y={0.12} />
+          <Skill name="Express/Sequelize" x={0.9} y={0.1} />
         </div>
       </div>
     </>
