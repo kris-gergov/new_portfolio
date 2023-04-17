@@ -8,7 +8,7 @@ const ListItemIcon = ({ reference }) => {
   });
 
   return (
-    <figure className="absolute left-0 stroke-dark">
+    <figure className="absolute left-0 stroke-dark sm:-left-5">
       <svg width="75" height="75" viewBox="0 0 100 100" className="-rotate-90">
         <circle
           cx="75"

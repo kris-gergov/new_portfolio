@@ -17,11 +17,11 @@ const about = () => {
       </Head>
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
-          <div className="grid w-full grid-cols-8 gap-16 justify-center">
-            <div className="col-span-4 flex flex-col items-start justify-start lg:col-span-8">
+          <div className="grid w-full grid-cols-2 gap-16 justify-center">
+            <div className="col-span-1 flex flex-col items-start justify-start lg:col-span-2">
               <Experience />
             </div>
-            <div className="col-span-4 flex flex-col items-start justify-start  lg:col-span-8">
+            <div className="col-span-1 flex flex-col items-start justify-start  lg:col-span-2">
               <Education />
             </div>
           </div>

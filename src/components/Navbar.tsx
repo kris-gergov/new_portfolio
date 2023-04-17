@@ -42,7 +42,7 @@ const CustomMobileLink = ({ href, title, className = '', toggle }) => {
   return (
     <button
       onClick={handleClick}
-      className={`${className} relative group text-light dark:text-dark my-2`}
+      className={`${className} relative group text-light dark:text-dark my-3`}
     >
       {title}
       <span
@@ -67,7 +67,7 @@ const Navbar = () => {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between relative z-10 dark:text-light xl:px-24 lg:px-16">
       <button
-        className="flex-col justify-center items-center hidden md:flex sm:mt-[10px]"
+        className="flex-col justify-center items-center hidden md:flex sm:mt-1"
         onClick={handleClick}
       >
         <span
@@ -191,6 +191,27 @@ const Navbar = () => {
             )}
           </motion.button>
         </nav>
+      </div>
+
+      <div className="hidden w-fit justify-center items-center md:flex">
+        <motion.button
+          onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+          className="rounded-full mt-1 p-1"
+          whileHover={{
+            scale: 1.1,
+            boxShadow:
+              mode === 'light'
+                ? '0 0 10px rgba(0,0,0,0.4)'
+                : '0 0 10px rgba(255,255,255,0.4)',
+          }}
+          whileTap={{ scale: 0.9 }}
+        >
+          {mode === 'dark' ? (
+            <SunIcon className="fill-dark" />
+          ) : (
+            <MoonIcon className="fill-dark" />
+          )}
+        </motion.button>
       </div>
 
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">

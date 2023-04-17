@@ -3,10 +3,13 @@ import Head from 'next/head';
 import Navbar from '@components/Navbar';
 import Footer from '@components/Footer';
 import '@styles/globals.css';
+import { useRouter } from 'next/router';
 
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-mont' });
 
 export default function App({ Component, pageProps }) {
+  const { asPath } = useRouter();
+
   return (
     <>
       <Head>
@@ -18,7 +21,7 @@ export default function App({ Component, pageProps }) {
       >
         <Navbar />
         <Component {...pageProps} />
-        <Footer />
+        {asPath === '/' ? null : <Footer />}
       </main>
     </>
   );
