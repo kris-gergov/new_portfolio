@@ -9,7 +9,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between sm:w-[80%] sm:ml-[10%] sm:mr-[10%]"
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between sm:w-[75%] sm:ml-[15%] sm:mr-[10%]"
     >
       <ListItemIcon reference={ref} />
       <motion.div
@@ -30,7 +30,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="capitalize font-medium text-dark/75 dark:text-light/80">
           {time} | {address}
         </span>
-        <p className="font-medium w-full">{work}</p>
+        <p className="font-medium w-full sm:font-normal">{work}</p>
       </motion.div>
     </li>
   );

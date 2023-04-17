@@ -92,7 +92,10 @@ const AccordionItem = ({ text, icons, active, order, img, handleClick }) => {
 
 const Card = ({ icons, image, demo = '', github, tag = undefined }) => {
   return (
-    <div className="item w-[45%] h-full overflow-hidden transition-all duration-500 lg:w-full lg:h-full lg:basis-[6vh] lg:hover:basis-[36vh]">
+    <div
+      className="item w-[45%] h-full overflow-hidden transition-all duration-500 
+      sm:dark:border-[1px] sm:dark:border-light/50 hover:border-none lg:w-full lg:h-full lg:basis-[6vh] lg:hover:basis-[36vh]"
+    >
       <p className="bg-dark/30 sm:bg-dark/40">
         {icons.map((icon: any, i) => (
           <div

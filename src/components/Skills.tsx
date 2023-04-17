@@ -67,10 +67,10 @@ const Skill = ({ name, x, y }) => {
 const Skills = () => {
   return (
     <>
-      {/* <h2 className="font-bold text-8xl mt-32 mb-24 w-full text-center 2xl:text-6xl lg:text-7xl md:text-6xl sm:text-4xl md:my-24 sm:my-16">
-        Skills
-      </h2> */}
-      <AnimatedText text="Skills" className="mt-32 mb-24 md:my-24 sm:my-16" />
+      <AnimatedText
+        text="Skills"
+        className="mt-32 mb-24 md:my-24 sm:my-16 sm:mb-8"
+      />
       <div className="grid w-[85%] mx-auto grid-cols-8 gap-16 items-center justify-center lg:gap-0">
         <div className="col-span-4 flex flex-col items-start justify-start lg:col-span-8">
           <Skill name="HTML/CSS" x={0.98} y={0.02} />
