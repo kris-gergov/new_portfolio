@@ -1,12 +1,9 @@
-import AnimatedText from '@/components/AnimatedText';
 import Education from '@/components/Education';
 import Experience from '@/components/Experience';
 import Layout from '@/components/Layout';
 import Skills from '@/components/Skills';
 import Head from 'next/head';
-import Image from 'next/image';
 import React from 'react';
-import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 
 const about = () => {
   return (

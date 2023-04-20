@@ -55,25 +55,24 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
+            type="Bachelor’s in Computer Science"
+            time="2017-2020"
+            place="University of East Anglia"
+            info="Relevant courses included Web Development, Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence."
           />
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            type="A Levels / GCSEs"
+            time="2009-2016"
+            place="The John Roan School"
+            info="A levels: Maths (B), Economics (B) and Computing (C). 9 GCSEs including Maths (A), English (B) and
+            Additional Science (A*)."
           />
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            type="SAFE 6.0 Certified"
+            time="2023"
+            place="Scaled Agile Framework"
+            info="Equipped with the skills to collaborate effectively with other teams and become a high-performing team member of an Agile Release Train (ART)."
           />
         </ul>
       </div>

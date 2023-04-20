@@ -3,7 +3,7 @@ import { motion, useScroll, useSpring } from 'framer-motion';
 import ListItemIcon from './ListItemIcon';
 import AnimatedText from './AnimatedText';
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({ position, company = '', companyLink = '', time, work }) => {
   const ref = useRef(null);
 
   return (
@@ -24,11 +24,11 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             target="_blank"
             className="text-primary capitalize"
           >
-            @{company}
+            {company ? `@${company}` : ''}
           </a>
         </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/80">
-          {time} | {address}
+          {time}
         </span>
         <p className="font-medium w-full sm:font-normal">{work}</p>
       </motion.div>
@@ -62,34 +62,32 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.gooogle.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            position="Full-Stack Developer"
+            company="PCCW Global"
+            companyLink="https://www.pccwglobal.com/"
+            time="2021-Present"
+            work="Currently involved in developing API based systems integration, 
+            working with OpenAPI specifications, frontend enhancements on existing web-based systems. 
+            Other responsibilities include writing unit tests, improving the CI-CD pipeline and onboarding new developers.
+            Current stack: TypeScript, React, Node, Sequalize and Postgres."
           />
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.gooogle.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            position="Freelance"
+            time="2020-2021"
+            work="Developed a workforce management website for a
+            cleaning company using TypeScript, React, Express and MongoDB. 
+            Designed hair dressing website utilizing SASS and the
+            Google Maps API"
           />
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.gooogle.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            position="C# Developer"
+            company="Purple Crane"
+            companyLink="https://www.purplecrane.com/"
+            time="2016-2017"
+            work="Maintained and updated code for 3+ large scale .NET
+            websites, using MVC, jQuery, HTML, and CSS. Worked in an Agile team of .NET developers to
+            identify and resolve system defects. Developed automated scheduled database backup
+            and delete scripts."
           />
         </ul>
       </div>
