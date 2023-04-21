@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
 
 const useThemeSwitcher = () => {
-  const preferDarkQuery = '(prefer-color-scheme: dark)';
-  const [mode, setMode] = useState('dark');
+  const [mode, setMode] = useState('');
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia(preferDarkQuery);
     const userPref = window.localStorage.getItem('kgTheme');
 
     const handleChange = () => {
@@ -16,7 +14,7 @@ const useThemeSwitcher = () => {
           ? document.documentElement.classList.add('dark')
           : document.documentElement.classList.remove('dark');
       } else {
-        const mediaTheme = mediaQuery.matches ? 'dark' : 'light';
+        const mediaTheme = 'dark';
         setMode(mediaTheme);
         mediaTheme === 'dark'
           ? document.documentElement.classList.add('dark')
@@ -25,10 +23,6 @@ const useThemeSwitcher = () => {
     };
 
     handleChange();
-
-    mediaQuery.addEventListener('change', handleChange);
-
-    return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
 
   useEffect(() => {
