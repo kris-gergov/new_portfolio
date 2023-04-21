@@ -1,17 +1,9 @@
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { useState } from 'react';
-import {
-  DribbbleIcon,
-  GithubIcon,
-  LinkedInIcon,
-  MoonIcon,
-  PinterestIcon,
-  SunIcon,
-  TwitterIcon,
-} from './Icons';
-import Logo from './Logo';
 import { motion } from 'framer-motion';
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons';
+import Logo from './Logo';
 import useThemeSwitcher from '@/hooks/useThemeSwitcher';
 
 const CustomLink = ({ href, title, className = '' }) => {
@@ -107,7 +99,7 @@ const Navbar = () => {
             />
             <div className="w-full flex items-center justify-around gap-4 my-2">
               <motion.a
-                href="https://www.github.com/"
+                href="https://github.com/kris-gergov"
                 target={'_blank'}
                 className="w-10 bg-light rounded-full dark:bg-dark"
                 whileHover={{ y: -2 }}
@@ -124,24 +116,6 @@ const Navbar = () => {
               >
                 <LinkedInIcon />
               </motion.a>
-              {/*  <motion.button
-              onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-              className="flex items-center justify-center rounded-full p-1"
-              whileHover={{
-                scale: 1.1,
-                boxShadow:
-                  mode === 'light'
-                    ? '0 0 10px rgba(0,0,0,0.4)'
-                    : '0 0 10px rgba(255,255,255,0.4)',
-              }}
-              whileTap={{ scale: 0.9 }}
-            >
-              {mode === 'dark' ? (
-                <SunIcon className="fill-light w-10" />
-              ) : (
-                <MoonIcon className="fill-light w-10" />
-              )}
-            </motion.button> */}
             </div>
           </nav>
         </motion.div>
@@ -155,7 +129,7 @@ const Navbar = () => {
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="https://www.twitter.com/"
+            href="https://github.com/kris-gergov"
             target={'_blank'}
             className="w-6 mx-3"
             whileHover={{ y: -2 }}

@@ -68,7 +68,7 @@ const Experience = () => {
             time="2021-Present"
             work="Currently involved in developing API based systems integration, 
             working with OpenAPI specifications, frontend enhancements on existing web-based systems. 
-            Other responsibilities include writing unit tests, improving the CI-CD pipeline and onboarding new developers.
+            Other responsibilities include writing unit tests, improving the CI/CD pipeline and onboarding new developers.
             Current stack: TypeScript, React, Node, Sequalize and Postgres."
           />
           <Details

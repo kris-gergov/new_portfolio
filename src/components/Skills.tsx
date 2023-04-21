@@ -25,7 +25,7 @@ function InnerProgressBar({
       custom={`${value * 100}%`}
     >
       {text ? (
-        <p className="ml-2 text-light text-lg font-medium mt-0.5 tracking-widest">
+        <p className="ml-2 text-light/100 text-lg font-medium [text-shadow:0_4px_8px_rgba(0,0,0,0.5)] mt-0.5 tracking-widest">
           {text}
         </p>
       ) : (
