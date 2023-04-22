@@ -30,7 +30,7 @@ export default function Home() {
               <div className="flex items-center  mt-2 gap-4 lg:w-full lg:justify-center">
                 <Button
                   text="CV"
-                  href="/dummy.pdf"
+                  href="/Kris Gergov.pdf"
                   icon={<LinkArrow className="w-6 ml-1" />}
                   variant="primary"
                 />

@@ -67,8 +67,8 @@ const Experience = () => {
             companyLink="https://www.pccwglobal.com/"
             time="2021-Present"
             work="Currently involved in developing API based systems integration, 
-            working with OpenAPI specifications, frontend enhancements on existing web-based systems. 
-            Other responsibilities include writing unit tests, improving the CI/CD pipeline and onboarding new developers.
+            working with OpenAPI specifications, front-end enhancements on existing web-based systems. 
+            Other responsibilities include writing unit tests, improving the CI/CD pipeline and on-boarding new developers.
             Current stack: TypeScript, React, Node, Sequalize and Postgres."
           />
           <Details

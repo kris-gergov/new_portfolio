@@ -98,7 +98,7 @@ const Gallery = () => {
       />
       <Card
         demo="https://github.com/kris-gergov/haircombe"
-        github="www.github.com"
+        github="https://kris-gergov.github.io/"
         tag="Freelance"
         image={project2Img}
         icons={[<SassIcon key={1} />, <MapsIcon key={2} />]}
